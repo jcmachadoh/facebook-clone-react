@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist --repo https://github.com/jcmachadoh/facebook-clone-react.git"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.0",
