@@ -1,0 +1,30 @@
+[
+  {
+    "id": "v1",
+    "author": {
+      "id": "page1",
+      "name": "Tech Reviews Español",
+      "avatarUrl": "https://i.pravatar.cc/150?img=68"
+    },
+    "description": "Descubre las nuevas características de React 19. ¡El rendimiento es increíble! 🚀",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    "viewsCount": "1.2M",
+    "likesCount": 45200,
+    "createdAt": "Hace 2 horas",
+    "duration": "10:05"
+  },
+  {
+    "id": "v2",
+    "author": {
+      "id": "page2",
+      "name": "Recetas Fáciles",
+      "avatarUrl": "https://i.pravatar.cc/150?img=44"
+    },
+    "description": "Cómo preparar la mejor pizza casera en menos de 30 minutos. 🍕🧀",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
+    "viewsCount": "850K",
+    "likesCount": 12400,
+    "createdAt": "Ayer",
+    "duration": "03:42"
+  }
+]

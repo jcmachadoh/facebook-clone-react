@@ -1,0 +1,23 @@
+[
+    {
+        "id": "n1",
+        "text": "¡Tu publicación se ha creado con éxito!",
+        "type": "post",
+        "createdAt": "Hace 1 minuto",
+        "viewed": false
+    },
+    {
+        "id": "n2",
+        "text": "Pedro Luis ha comentado en tu publicación.",
+        "type": "comment",
+        "createdAt": "Hace 5 minutos",
+        "viewed": false
+    },
+    {
+        "id": "n3",
+        "text": "A María García le ha gustado tu espacio de trabajo.",
+        "type": "like",
+        "createdAt": "Hace 2 horas",
+        "viewed": true
+    }
+]

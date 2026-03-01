@@ -1,0 +1,44 @@
+[
+  {
+    "id": "c1",
+    "name": "Carlos Mendoza",
+    "avatarUrl": "https://i.pravatar.cc/150?img=12",
+    "isOnline": true
+  },
+  {
+    "id": "c2",
+    "name": "Ana Lucía",
+    "avatarUrl": "https://i.pravatar.cc/150?img=32",
+    "isOnline": true
+  },
+  {
+    "id": "c3",
+    "name": "Roberto Gómez",
+    "avatarUrl": "https://i.pravatar.cc/150?img=53",
+    "isOnline": false
+  },
+  {
+    "id": "c4",
+    "name": "Laura Torres",
+    "avatarUrl": "https://i.pravatar.cc/150?img=47",
+    "isOnline": true
+  },
+  {
+    "id": "c5",
+    "name": "Miguel Ángel",
+    "avatarUrl": "https://i.pravatar.cc/150?img=60",
+    "isOnline": true
+  },
+  {
+    "id": "c6",
+    "name": "Sofía Reyes",
+    "avatarUrl": "https://i.pravatar.cc/150?img=1",
+    "isOnline": false
+  },
+  {
+    "id": "c7",
+    "name": "David Silva",
+    "avatarUrl": "https://i.pravatar.cc/150?img=15",
+    "isOnline": true
+  }
+]

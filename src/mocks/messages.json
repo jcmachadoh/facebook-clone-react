@@ -1,0 +1,35 @@
+[
+    {
+        "id": "msg1",
+        "sender": {
+            "id": "u2",
+            "name": "María García",
+            "avatarUrl": "https://i.pravatar.cc/150?img=5"
+        },
+        "lastMessage": "¡Hola! ¿Cómo va ese proyecto de React?",
+        "timestamp": "10:30 AM",
+        "isUnread": true
+    },
+    {
+        "id": "msg2",
+        "sender": {
+            "id": "u3",
+            "name": "Carlos Mendoza",
+            "avatarUrl": "https://i.pravatar.cc/150?img=12"
+        },
+        "lastMessage": "Ya te envié el repositorio por GitHub. Revísalo cuando puedas.",
+        "timestamp": "Ayer",
+        "isUnread": false
+    },
+    {
+        "id": "msg3",
+        "sender": {
+            "id": "u4",
+            "name": "Ana Lucía",
+            "avatarUrl": "https://i.pravatar.cc/150?img=32"
+        },
+        "lastMessage": "¿Nos conectamos a la reunión a las 5?",
+        "timestamp": "Marte",
+        "isUnread": false
+    }
+]

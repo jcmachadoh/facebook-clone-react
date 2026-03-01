@@ -1,0 +1,37 @@
+[
+    {
+        "id": "f1",
+        "name": "Carlos Mendoza",
+        "avatarUrl": "https://i.pravatar.cc/150?img=12",
+        "mutualFriends": 14,
+        "status": "friend"
+    },
+    {
+        "id": "f2",
+        "name": "Ana Lucía",
+        "avatarUrl": "https://i.pravatar.cc/150?img=32",
+        "mutualFriends": 5,
+        "status": "friend"
+    },
+    {
+        "id": "f3",
+        "name": "Roberto Gómez",
+        "avatarUrl": "https://i.pravatar.cc/150?img=53",
+        "mutualFriends": 2,
+        "status": "suggestion"
+    },
+    {
+        "id": "f4",
+        "name": "Laura Torres",
+        "avatarUrl": "https://i.pravatar.cc/150?img=47",
+        "mutualFriends": 8,
+        "status": "request"
+    },
+    {
+        "id": "f5",
+        "name": "Miguel Ángel",
+        "avatarUrl": "https://i.pravatar.cc/150?img=60",
+        "mutualFriends": 21,
+        "status": "friend"
+    }
+]

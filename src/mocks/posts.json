@@ -1,0 +1,135 @@
+[
+    {
+        "id": "p1",
+        "author": {
+            "id": "u19",
+            "name": "Juan Pérez",
+            "avatarUrl": "https://i.pravatar.cc/150?img=11"
+        },
+        "createdAt": "Hace 2 horas",
+        "content": "¡Empezando mi clon de Facebook con React, TypeScript y Tailwind CSS! Esto de los componentes es genial. 🚀",
+        "mediaUrls": [],
+        "likesCount": 15,
+        "commentsCount": 2,
+        "isLikedByMe": false,
+        "comments": [
+            {
+                "id": "c1",
+                "author": {
+                    "id": "u2",
+                    "name": "María García",
+                    "avatarUrl": "https://i.pravatar.cc/150?img=5"
+                },
+                "content": "¡Mucho éxito con eso! Tailwind es una maravilla.",
+                "createdAt": "Hace 1 hora"
+            }
+        ]
+    },
+    {
+        "id": "p2",
+        "author": {
+            "id": "u2",
+            "name": "María García",
+            "avatarUrl": "https://i.pravatar.cc/150?img=5"
+        },
+        "createdAt": "Hace 5 horas",
+        "content": "Miren mi nuevo espacio de trabajo para programar. 💻✨",
+        "mediaUrls": [
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+        ],
+        "likesCount": 42,
+        "commentsCount": 0,
+        "isLikedByMe": true,
+        "comments": []
+    },
+    {
+        "id": "p3",
+        "author": {
+            "id": "u3",
+            "name": "Carlos Mendoza",
+            "avatarUrl": "https://i.pravatar.cc/150?img=12"
+        },
+        "createdAt": "Hace 8 horas",
+        "content": "¿Alguien más piensa que el café es el combustible oficial de los desarrolladores? ☕ No podría vivir sin mi taza matutina.",
+        "mediaUrls": [],
+        "likesCount": 89,
+        "commentsCount": 5,
+        "isLikedByMe": false,
+        "comments": []
+    },
+    {
+        "id": "p4",
+        "author": {
+            "id": "u4",
+            "name": "Ana Lucía",
+            "avatarUrl": "https://i.pravatar.cc/150?img=32"
+        },
+        "createdAt": "Ayer a las 14:30",
+        "content": "Aprovechando la tarde para leer un poco sobre arquitectura limpia. Nunca se deja de aprender en este mundo del software. 📚",
+        "mediaUrls": [
+            "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        ],
+        "likesCount": 120,
+        "commentsCount": 12,
+        "isLikedByMe": false,
+        "comments": []
+    },
+    {
+        "id": "p5",
+        "author": {
+            "id": "u19",
+            "name": "Juan Pérez",
+            "avatarUrl": "https://i.pravatar.cc/150?img=11"
+        },
+        "createdAt": "Ayer a las 10:00",
+        "content": "Gente, ¿qué prefieren para el manejo de estados globales? ¿Zustand, Redux o Context API? Los leo en los comentarios. 👇",
+        "mediaUrls": [],
+        "likesCount": 34,
+        "commentsCount": 18,
+        "isLikedByMe": true,
+        "comments": [
+            {
+                "id": "c2",
+                "author": {
+                    "id": "u3",
+                    "name": "Carlos Mendoza",
+                    "avatarUrl": "https://i.pravatar.cc/150?img=12"
+                },
+                "content": "Zustand sin duda. Es súper ligero y no requiere tanto código boilerplate.",
+                "createdAt": "Ayer a las 10:15"
+            }
+        ]
+    },
+    {
+        "id": "p6",
+        "author": {
+            "id": "currentUser123",
+            "name": "Usuario Demo",
+            "avatarUrl": "https://i.pravatar.cc/150?img=60"
+        },
+        "createdAt": "Hace 2 días",
+        "content": "Probando si mis publicaciones salen en mi muro de Perfil. ¡Parece que todo está funcionando de maravilla! 🥳",
+        "mediaUrls": [],
+        "likesCount": 5,
+        "commentsCount": 0,
+        "isLikedByMe": false,
+        "comments": []
+    },
+    {
+        "id": "p7",
+        "author": {
+            "id": "u5",
+            "name": "Roberto Gómez",
+            "avatarUrl": "https://i.pravatar.cc/150?img=53"
+        },
+        "createdAt": "Hace 3 días",
+        "content": "Escapada de fin de semana a las montañas. Desconectar para conectar. 🌲⛰️",
+        "mediaUrls": [
+            "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+        ],
+        "likesCount": 210,
+        "commentsCount": 8,
+        "isLikedByMe": true,
+        "comments": []
+    }
+]
