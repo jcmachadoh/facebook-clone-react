@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 
-import { Home, Users, MonitorPlay, Store, Bell, Facebook, Moon, Sun, Globe, Menu, Grid } from "lucide-react";
+import { Home, Users, MonitorPlay, Store, Bell, Facebook, Moon, Sun, Globe, Menu } from "lucide-react";
 import { TopNavButtoms } from "./_topnav/TopNavButtoms";
 import { TopNavPestana } from "./_topnav/TopNavPestana";
 import { TopNavSearch } from "./_topnav/TopNavSearch";
