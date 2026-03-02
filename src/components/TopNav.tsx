@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 
-import { Home, Users, MonitorPlay, Store, Grid, Bell, Facebook, Moon, Sun, Globe } from "lucide-react";
+import { Home, Users, MonitorPlay, Store, Bell, Facebook, Moon, Sun, Globe, Menu, Grid } from "lucide-react";
 import { TopNavButtoms } from "./_topnav/TopNavButtoms";
 import { TopNavPestana } from "./_topnav/TopNavPestana";
 import { TopNavSearch } from "./_topnav/TopNavSearch";
@@ -14,6 +14,7 @@ import { translations } from '../i18n/translations';
 
 import { TopNotificationDropdown } from "./_topnav/TopNotificationDropdown";
 import { TopSelectLanguage } from './_topnav/TopSelectLanguage';
+import { TopMobileMenu } from './_topnav/TopMobileMenu';
 
 const currentUser = currentUserData as Author;
 
@@ -86,58 +87,38 @@ export const TopNav = () => {
 
             {/* LADO DERECHO: Botones con tooltips y Perfil */}
             <div className="flex items-center justify-end gap-2 basis-1/3">
-                <div className="hidden sm:flex items-center gap-2">
-                    <TopNavButtoms
-                        title={t.menu} // <-- Agregamos los títulos
-                        icon={<Grid className="w-5 h-5" />}
-                        onClick={() => console.log("Menu clicked")}
-                    />
+
+                {/* 3A. VERSIÓN PC (Solo visible en pantallas medianas/grandes 'md:flex') */}
+                <div className="hidden md:flex items-center gap-2">
+                    {/* <TopNavButtoms title={t.menu} icon={<Grid className="w-5 h-5" />} onClick={() => { }} /> */}
                     {/* <Link to={'/conversations'}>
-                        <TopNavButtoms
-                            title={t.messenger}
-                            icon={<MessageCircle className="w-5 h-5" />}
-                            onClick={() => console.log("Messages clicked")}
-                        />
+                        <TopNavButtoms title={t.messenger} icon={<MessageCircle className="w-5 h-5" />} onClick={() => { }} />
                     </Link> */}
                     <Link to={'/notifications'}>
-                        <TopNavButtoms
-                            title={t.notifications}
-                            icon={<Bell className="w-5 h-5" />}
-                            onClick={() => console.log("Notifications clicked")}
-                            notification={unviewedNotifications}
-                            dropdown={<TopNotificationDropdown />}
-                        />
+                        <TopNavButtoms title={t.notifications} icon={<Bell className="w-5 h-5" />} notification={unviewedNotifications} dropdown={<TopNotificationDropdown />} onClick={() => { }} />
                     </Link>
+                    <TopNavButtoms title={theme === 'dark' ? t.switchLight : t.switchDark} icon={theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />} onClick={toggleTheme} />
+                    <TopNavButtoms title="Idioma" icon={<Globe className="w-5 h-5" />} dropdown={<TopSelectLanguage />} onClick={() => { }} />
+                </div>
+
+                {/* 3B. VERSIÓN MÓVIL (Solo visible en pantallas pequeñas 'flex md:hidden') */}
+                <div className="flex md:hidden items-center gap-2">
+                    <TopNavButtoms title="Idioma" icon={<Globe className="w-5 h-5" />} dropdown={<TopSelectLanguage />} onClick={() => { }} />
+                    {/* Botón Hamburguesa con nuestro nuevo menú */}
                     <TopNavButtoms
-                        title={theme === 'dark' ? t.switchLight : t.switchDark}
-                        icon={theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-                        onClick={toggleTheme}
-                    />
-                    <TopNavButtoms
-                        title="Idioma / Language"
-                        icon={<Globe className="w-5 h-5" />}
+                        title="Menú"
+                        icon={<Menu className="w-6 h-6" />}
                         onClick={() => { }}
-                        dropdown={<TopSelectLanguage />} // Le pasamos el menú que creamos en el paso 3
+                        dropdown={<TopMobileMenu />}
                     />
                 </div>
 
-                {/* Tooltip manual para el perfil */}
+                {/* PERFIL (Visible siempre) */}
                 <div className="group relative flex items-center justify-center">
-
-                    {/* 2. Usamos Link y le decimos a dónde ir (to="/profile") */}
                     <Link to="/profile">
-                        <img
-                            src={currentUser.avatarUrl}
-                            alt="Perfil"
-                            className="w-10 h-10 rounded-full object-cover ml-2 cursor-pointer border border-gray-200"
-                        />
+                        <img src={currentUser.avatarUrl} alt="Perfil" className="w-10 h-10 rounded-full object-cover ml-2 cursor-pointer border border-gray-200 dark:border-gray-700" />
                     </Link>
-
-                    <span className="absolute top-[calc(100%+5px)] right-0 hidden group-hover:block bg-gray-800 text-white text-xs rounded-md px-2 py-1 whitespace-nowrap z-50 pointer-events-none bg-opacity-90 shadow-sm font-medium">
-                        Cuenta
-                    </span>
                 </div>
-
             </div>
 
         </nav>
