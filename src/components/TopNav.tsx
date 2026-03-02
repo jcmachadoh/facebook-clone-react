@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 
-import { Home, Users, MonitorPlay, Store, Grid, MessageCircle, Bell, Facebook, Moon, Sun, Globe } from "lucide-react";
+import { Home, Users, MonitorPlay, Store, Grid, Bell, Facebook, Moon, Sun, Globe } from "lucide-react";
 import { TopNavButtoms } from "./_topnav/TopNavButtoms";
 import { TopNavPestana } from "./_topnav/TopNavPestana";
 import { TopNavSearch } from "./_topnav/TopNavSearch";
@@ -92,13 +92,13 @@ export const TopNav = () => {
                         icon={<Grid className="w-5 h-5" />}
                         onClick={() => console.log("Menu clicked")}
                     />
-                    <Link to={'/conversations'}>
+                    {/* <Link to={'/conversations'}>
                         <TopNavButtoms
                             title={t.messenger}
                             icon={<MessageCircle className="w-5 h-5" />}
                             onClick={() => console.log("Messages clicked")}
                         />
-                    </Link>
+                    </Link> */}
                     <Link to={'/notifications'}>
                         <TopNavButtoms
                             title={t.notifications}
